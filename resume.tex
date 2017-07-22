@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% BASED ON: https://github.com/deedy/Deedy-Resume
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{resume}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Andrei}{Maximov}{ \urlstyle{same}\url{https://github.com/andreimaximov} \\
+\href{mailto:amaximov@ucsd.edu}{amaximov@ucsd.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{UC San Diego}
+\descript{B.S. in Computer Science}
+\location{October 2014 - Present | La Jolla, CA}
+Jacobs School of Engineering \\
+Provost Honors \\
+\location{Cum. GPA: 3.83 / 4.0 \\ Major GPA: 4.0 / 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+\href{https://github.com/andreimaximov}{https://github.com/andreimaximov} \\
+\href{http://andreimaximov.com}{http://andreimaximov.com} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+Advanced Data Structures \\
+Algorithms \\
+Operating Systems \\
+Computer Architecture \\
+Parallel Computing \\
+Advanced Graphics \\
+Neural Networks and Machine Learning \\
+Calculus \\
+Linear Algebra
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Programming}
+
+\location{Proficient}
+C++ \textbullet{} Java \textbullet{} Python
+
+\location{Experience}
+C \textbullet{} Lua \textbullet{} JavaScript/Node.js \textbullet{} PHP
+\textbullet{} OCaml \textbullet{} Bash
+
+\location{Familiar}
+SQL
+
+\sectionsep
+
+\subsection{Tools}
+
+\location{Datastores}
+PostgreSQL \textbullet{} MySQL \textbullet{} Redis \textbullet{} Memcached
+\textbullet{} Kafka \textbullet{} HDFS
+
+\location{Frameworks}
+Hadoop MapReduce \textbullet{} Cascading \textbullet{} Apache Storm
+\textbullet{} Apache Spark
+
+\location{Other}
+Angular 2 \textbullet{} React \textbullet{} Git
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Quora}
+\descript{ | Software Engineering Intern }
+\location{June 2017 – Present | Mountain View, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Working on data infrastructure to improve reliability, monitoring, and
+stream processing abstractions with Apache Kafka and Spark.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Google}
+\descript{ | Software Engineering Intern }
+\location{June 2016 – September 2016 | Mountain View, CA}
+\begin{tightemize}
+\item Worked on the Google Apps team to develop an Object Relational Mapping
+abstraction for integrating the Google Apps Admin SDK as a datastore into
+Google App Maker.
+\item Used Java on the backend and JavaScript on the frontend to create a query
+engine with filtering and relations support.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{eFolder}
+\descript{ | Software Developer Intern }
+\location{June 2016 – September 2016 | Mountain View, CA}
+\begin{tightemize}
+\item Developed a scalable and fault tolerant Lambda Architecture reporting
+infrastructure using Hadoop MapReduce on EMR and AWS Lambda for realtime
+Kinesis stream processing.
+\item Built an internal MapReduce abstraction library on top of Cascading for
+improved data validation, pipeline management, and simplified join algorithm
+for graph data sets.
+\item Implemented an automated billing system using PHP and PostgreSQL
+responsible for processing a majority of revenue.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{PathTracer}
+\descript{ | C++ Rendering Engine }
+\begin{tightemize}
+\item Developed a physically accurate rendering engine with support for Monte
+Carlo global illumination, fresnel reflections/refractions, texture mapping,
+glossy surfaces, importance sampling, and multi-threading that
+probabilistically approximates the
+\href{https://en.wikipedia.org/wiki/Rendering_equation}{Rendering Equation}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Programming Puzzles}
+\descript{ | C++, Python, Java }
+\begin{tightemize}
+\item I enjoy solving Codeforces and HackerRank programming puzzles and
+learning new algorithms in my free time.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Into-It Games}
+\descript{ | Game Development Startup, Lua, Java, C++ }
+\begin{tightemize}
+\item Developed five cross platform iOS and Android games in high school using
+Lua that reached over 100,000 cumulative downloads and 500,000 game sessions.
+\item Used Lua with an object oriented architecture for core development.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Android Push Notification Server }
+\descript{ | Java}
+\begin{tightemize}
+\item Developed a web app on Google App Engine for managing apps and
+registering devices in Cloud Datastore.
+\item Wrote a REST API for device subscriptions, channel management, and
+targeted push notification dispatch through GCM.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\begin{tabular}{rll}
+2013 & Outstanding Achievement in AP Physics C - Mechanics \\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}

@@ -1,6 +1,6 @@
 all:
-	xelatex deedy_resume-openfont.tex
+	xelatex resume.tex
 
 .PHONY: clean
 clean:
-	rm -rf *.aux *.log *.pdf *.out
+	rm -rf *.aux *.log *.out
