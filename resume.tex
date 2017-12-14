@@ -87,11 +87,11 @@ Linear Algebra
 C++ \textbullet{} Java \textbullet{} Python
 
 \location{Experience}
-C \textbullet{} Lua \textbullet{} JavaScript/Node.js \textbullet{} PHP
-\textbullet{} OCaml \textbullet{} Bash
+Rust \textbullet{} Scala \textbullet{} Lua \textbullet{} JavaScript \textbullet{} PHP
+\textbullet{} OCaml \textbullet{} C
 
 \location{Familiar}
-SQL
+SQL \textbullet{} Bash
 
 \sectionsep
 
@@ -101,12 +101,12 @@ SQL
 PostgreSQL \textbullet{} MySQL \textbullet{} Redis \textbullet{} Memcached
 \textbullet{} Kafka \textbullet{} HDFS
 
-\location{Frameworks}
-Hadoop MapReduce \textbullet{} Cascading \textbullet{} Apache Storm
-\textbullet{} Apache Spark
+\location{Tools}
+Apache Spark \textbullet{} Apache Storm \textbullet{} Hadoop MapReduce
+\textbullet{} Cascading
 
 \location{Other}
-Angular 2 \textbullet{} React \textbullet{} Git
+Angular 2 \textbullet{} React \textbullet{} Git \textbullet{} Mercurial
 
 \sectionsep
 
@@ -128,32 +128,39 @@ Angular 2 \textbullet{} React \textbullet{} Git
 
 \runsubsection{Facebook}
 \descript{ | Software Engineering Intern }
-\location{September 2017 – Present | Menlo Park, CA}
+\location{September 2017 – Present | Search Ranking Infra | Menlo Park, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Stream processing on Search Ranking Infrastructure.
+\item Developed and released a stream processing platform in C++ for efficiently
+approximating high weight elements in a sliding window.
+\item Increased time granularity for "trending X" uses cases such as for relevance
+experiments in video search using top-k features.
+\item Algorithm based on ideas from
+\href{http://www-cs-students.stanford.edu/~datar/papers/sicomp_streams.pdf}
+{Maintaining Stream Statistics over Sliding Windows} by Datar, Gionis, Indyk, and Motwani.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Quora}
 \descript{ | Software Engineering Intern }
-\location{June 2017 – September 2017 | Mountain View, CA}
+\location{June 2017 – September 2017 | Infra/Data Platform | Mountain View, CA}
 \begin{tightemize}
-\item Worked on the Data Platform/Infra team to design from scratch and build
-a new highly scalable realtime monitoring system using Scala, Apache Spark,
-and Kafka.
-\item Improved infrastructure monitoring tools with Python and C++.
+\item Designed and built a distributed system for monitoring realtime and historic
+infrastructure metrics using Scala, Apache Spark, and Kafka with improved reliability
+and scalability for future growth.
+\item Improved Python tooling with new disaster mitgation utilities such as MySQL query 
+blacklisting.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Google}
 \descript{ | Software Engineering Intern }
-\location{June 2016 – September 2016 | Mountain View, CA}
+\location{June 2016 – September 2016 | Chrome Apps | Mountain View, CA}
 \begin{tightemize}
-\item Worked on the Apps team to develop an Object Relational Mapping
-abstraction for integrating the Apps Admin SDK as a datastore into App Maker.
-\item Used Java on the backend and JavaScript on the frontend to create a query
-engine with filtering and relations support.
+\item Developed an Object Relational Mapping abstraction for integrating the Apps
+Admin SDK as a datastore into App Maker.
+\item Used Java and JavaScript to create a query engine on top of the Admin SDK with
+filtering and relational support.
 \end{tightemize}
 \sectionsep
 
@@ -161,9 +168,8 @@ engine with filtering and relations support.
 \descript{ | Software Developer Intern }
 \location{June 2014 – May 2016 | Mountain View, CA}
 \begin{tightemize}
-\item Developed a scalable and fault tolerant Lambda Architecture reporting
-infrastructure using Java with Hadoop MapReduce and AWS Lambda for realtime
-Kinesis stream processing.
+\item Developed a reporting system based on the Lambda Architecture using Java on
+Hadoop MapReduce and AWS Lambda for Kinesis stream processing.
 \item Built a MapReduce abstraction with Cascading for improved data pipeline
 management, schema validation, and simplified join algorithm on graph data.
 \item Implemented an automated billing system using PHP and PostgreSQL
@@ -182,9 +188,11 @@ responsible for processing a majority of eFolder's revenue.
 \begin{tightemize}
 \item Developed a physically accurate rendering engine with support for Monte
 Carlo global illumination, fresnel reflections/refractions, texture mapping,
-glossy surfaces, importance sampling, and multi-threading that
-probabilistically approximates the
+glossy surfaces and that probabilistically approximates the
 \href{https://en.wikipedia.org/wiki/Rendering_equation}{Rendering Equation}.
+\item Utilizes \href{https://en.wikipedia.org/wiki/Bounding_volume_hierarchy}{Bounding Volume Hierarchies}
+for maximum performance on complex scenes and multi-threading to parallelize
+chunk rendering.
 \end{tightemize}
 \sectionsep
 
@@ -192,24 +200,15 @@ probabilistically approximates the
 \descript{ | C++, Python, Java }
 \begin{tightemize}
 \item I enjoy solving Codeforces and HackerRank programming puzzles and
-learning new algorithms in my free time.
+learning new algorithms/data-structures in my free time.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Into-It Games}
 \descript{ | Game Development Startup, Lua, Java, C++ }
 \begin{tightemize}
-\item Developed five cross platform iOS/ Android games in high school using Lua
-that with over 100k downloads and 500k game sessions.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Android Push Notification Server }
-\descript{ | Java}
-\begin{tightemize}
-\item Developed a web app on Google App Engine for managing apps, registering
-devices in Cloud Datastore, and targeted push notification dispatch through
-GCM.
+\item Developed five cross platform iOS/ Android games in high school with Lua
+that reached over 100k downloads and 500k game sessions.
 \end{tightemize}
 \sectionsep
 
