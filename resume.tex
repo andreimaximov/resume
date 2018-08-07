@@ -42,10 +42,10 @@
 
 \subsection{UC San Diego}
 \descript{B.S. in Computer Science}
-\location{October 2014 - Present | La Jolla, CA}
+\location{October 2014 - June 2018 | La Jolla, CA}
 Jacobs School of Engineering \\
-Provost Honors \\
-\location{Cum. GPA: 3.83 / 4.0 \\ Major GPA: 4.0 / 4.0}
+Magna Cum Laude \\
+\location{Cum. GPA: 3.85 / 4.0 \\ Major GPA: 4.0 / 4.0}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,14 +64,14 @@ Provost Honors \\
 \section{Coursework}
 
 Advanced Data Structures \\
-Algorithms \\
-Operating Systems \\
-Computer Architecture \\
-Parallel Computing \\
 Advanced Graphics \\
-Neural Networks and Machine Learning \\
-Calculus \\
-Linear Algebra
+Algorithms \\
+Compilers \\
+Computer Architecture \\
+Deep Learning \\
+Networked Services \\
+Operating Systems \\
+Parallel Computing
 
 \sectionsep
 
@@ -84,29 +84,24 @@ Linear Algebra
 \subsection{Programming}
 
 \location{Proficient}
-C++ \textbullet{} Java \textbullet{} Python
+C++ \textbullet{} Rust \textbullet{} Java \textbullet{} Python
 
 \location{Experience}
-Rust \textbullet{} Scala \textbullet{} Lua \textbullet{} JavaScript \textbullet{} PHP
-\textbullet{} OCaml \textbullet{} C
-
-\location{Familiar}
-SQL \textbullet{} Bash
+OCaml \textbullet{} Haskell \textbullet{} Scala \textbullet{} Lua \textbullet{} JavaScript \textbullet{} PHP
 
 \sectionsep
 
 \subsection{Tools}
 
 \location{Datastores}
-PostgreSQL \textbullet{} MySQL \textbullet{} Redis \textbullet{} Memcached
-\textbullet{} Kafka \textbullet{} HDFS
+PostgreSQL \textbullet{} Redis \textbullet{} Memcached
+\textbullet{} Kafka \textbullet{} ZooKeeper \textbullet{} HDFS
 
-\location{Tools}
-Apache Spark \textbullet{} Apache Storm \textbullet{} Hadoop MapReduce
-\textbullet{} Cascading
+\location{Compute}
+Apache Spark \textbullet{} Apache Storm \textbullet{} Cascading (Hadoop MapReduce)
 
-\location{Other}
-Angular 2 \textbullet{} React \textbullet{} Git \textbullet{} Mercurial
+\location{VCS}
+Git \textbullet{} Mercurial
 
 \sectionsep
 
@@ -128,16 +123,12 @@ Angular 2 \textbullet{} React \textbullet{} Git \textbullet{} Mercurial
 
 \runsubsection{Facebook}
 \descript{ | Software Engineering Intern }
-\location{September 2017 – Present | Search Ranking Infra | Menlo Park, CA}
+\location{September 2017 – December 2017 | Search Ranking Infra | Menlo Park, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed and released a stream processing platform in C++ for efficiently
-approximating high weight elements in a sliding window.
-\item Increased time granularity for "trending X" uses cases such as for relevance
-experiments in video search using top-k features.
-\item Algorithm based on ideas from
-\href{http://www-cs-students.stanford.edu/~datar/papers/sicomp_streams.pdf}
-{Maintaining Stream Statistics over Sliding Windows} by Datar, Gionis, Indyk, and Motwani.
+\item Developed a C++ stream processing platform for efficiently approximating top-K elements in a sliding window of millions of unique candidates.
+\item Released it to Facebook engineers as a generic, easy to use, config-driven, and fully-managed service.
+\item Deployed it to production and enabled realtime updates for use cases such as top clicked search results.
 \end{tightemize}
 \sectionsep
 
@@ -145,11 +136,8 @@ experiments in video search using top-k features.
 \descript{ | Software Engineering Intern }
 \location{June 2017 – September 2017 | Infra/Data Platform | Mountain View, CA}
 \begin{tightemize}
-\item Designed and built a distributed system for monitoring realtime and historic
-infrastructure metrics using Scala, Apache Spark, and Kafka with improved reliability
-and scalability for future growth.
-\item Improved Python tooling with new disaster mitgation utilities such as MySQL query
-blacklisting.
+\item Developed a system for monitoring realtime and historic infrastructure metrics using Scala, Apache Spark, and Kafka to improve reliability and scalability compared to existing systems.
+\item Improved disaster mitigation utilities with MySQL query blacklisting using Python and ZooKeeper.
 \end{tightemize}
 \sectionsep
 
@@ -157,10 +145,8 @@ blacklisting.
 \descript{ | Software Engineering Intern }
 \location{June 2016 – September 2016 | Chrome Apps | Mountain View, CA}
 \begin{tightemize}
-\item Developed an Object Relational Mapping abstraction for integrating the Apps
-Admin SDK as a datastore into App Maker.
-\item Used Java and JavaScript to create a query engine on top of the Admin SDK with
-filtering and relational support.
+\item Developed an ORM abstraction for integrating the Apps Admin SDK as a datastore into App Maker, a GUI based app builder for enterprise customers.
+\item Wrote a Java + JavaScript based query engine on top of the Admin SDK to allow for filtering and entity relationships with other datastore backends.
 \end{tightemize}
 \sectionsep
 
@@ -168,12 +154,8 @@ filtering and relational support.
 \descript{ | Software Developer Intern }
 \location{June 2014 – May 2016 | Mountain View, CA}
 \begin{tightemize}
-\item Developed a reporting system based on the Lambda Architecture using Java on
-Hadoop MapReduce and AWS Lambda for Kinesis stream processing.
-\item Built a MapReduce abstraction with Cascading for improved data pipeline
-management, schema validation, and simplified join algorithm on graph data.
-\item Implemented an automated billing system using PHP and PostgreSQL
-responsible for processing a majority of eFolder's revenue.
+\item Developed a prototype for a realtime graph-based Lambda Architecture metrics system using Java, Hadoop MapReduce for batch computation, and AWS Lambda + Kinesis for stream processing/realtime updates.
+\item Implemented an automated billing system using PHP and PostgreSQL responsible for processing a majority of eFolder's revenue.
 \end{tightemize}
 \sectionsep
 
@@ -186,40 +168,29 @@ responsible for processing a majority of eFolder's revenue.
 \runsubsection{PathTracer}
 \descript{ | C++ Rendering Engine }
 \begin{tightemize}
-\item Developed a physically accurate rendering engine with support for Monte
-Carlo global illumination, fresnel reflections/refractions, texture mapping,
-glossy surfaces and that probabilistically approximates the
-\href{https://en.wikipedia.org/wiki/Rendering_equation}{Rendering Equation}.
-\item Utilizes \href{https://en.wikipedia.org/wiki/Bounding_volume_hierarchy}{Bounding Volume Hierarchies}
-for maximum performance on complex scenes and multi-threading to parallelize
-chunk rendering.
+\item A physically accurate rendering engine with support for Monte Carlo global illumination, fresnel reflections/refractions, and texture mapping that probabilistically approximates the
+\href{https://en.wikipedia.org/wiki/Rendering_equation}{rendering equation}.
+\item Uses \href{https://en.wikipedia.org/wiki/Bounding_volume_hierarchy}{Bounding Volume Hierarchies} for improved ray-intersection performance and a worker-thread architecture for parallelizing chunk rendering.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Programming Puzzles}
-\descript{ | C++, Python, Java }
+\runsubsection{uthread}
+\descript{ | C++ fiber/user-space threading library }
 \begin{tightemize}
-\item I enjoy solving Codeforces and HackerRank programming puzzles and
-learning new algorithms/data-structures in my free time.
+\item Uses cooperative scheduling with fast context switching (30M+ thread context switches/second on a single x86-64 core)
+\item Provides user-space synchronization via mutexes, condition variables, etc.
+\item Provides a non-blocking IO API for timers, sockets, etc. via libevent
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Into-It Games}
-\descript{ | Game Development Startup, Lua, Java, C++ }
+\runsubsection{usrnet}
+\descript{ | Rust user-space network stack }
 \begin{tightemize}
-\item Developed five cross platform iOS/ Android games in high school with Lua
-that reached over 100k downloads and 500k game sessions.
+\item Provides a rich callback-based API of raw ethernet, IP, UDP, and TCP sockets similar to that of libevent.
+\item Includes arping, ping, traceroute, netcat, and echo server examples.
+\item Exchanges raw ethernet frames via a Linux TAP using the OS kernel as a router.
+\item TCP sockets are in progress, currently support connection establishment.
 \end{tightemize}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards}
-\begin{tabular}{rll}
-2013 & Outstanding Achievement in AP Physics C - Mechanics \\
-\end{tabular}
 \sectionsep
 
 \end{minipage}
