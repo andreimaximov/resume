@@ -93,14 +93,11 @@ OCaml \textbullet{} Haskell \textbullet{} Scala \textbullet{} Lua \textbullet{} 
 
 \subsection{Tools}
 
-\location{Datastores}
 PostgreSQL \textbullet{} Redis \textbullet{} Memcached
 \textbullet{} Kafka \textbullet{} ZooKeeper \textbullet{} HDFS
 
-\location{Compute}
-Apache Spark \textbullet{} Apache Storm \textbullet{} Cascading (Hadoop MapReduce)
+Apache Spark \textbullet{} Apache Storm \textbullet{} Cascading - Hadoop MapReduce
 
-\location{VCS}
 Git \textbullet{} Mercurial
 
 \sectionsep
@@ -122,13 +119,21 @@ Git \textbullet{} Mercurial
 \section{Experience}
 
 \runsubsection{Facebook}
-\descript{ | Software Engineering Intern }
-\location{September 2017 – December 2017 | Search Ranking Infra | Menlo Park, CA}
+\descript{ | Software Engineer }
+\location{July 2018 - Present | Memcache and Cache RPC | Menlo Park, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
+\item Working in C++ on distributed systems for low latency counters, rate limiting, and other approximate algorithms.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Facebook}
+\descript{ | Software Engineering Intern }
+\location{September 2017 – December 2017 | Search Ranking Infra | Menlo Park, CA}
+\begin{tightemize}
 \item Developed a C++ stream processing platform for efficiently approximating top-K elements in a sliding window of millions of unique candidates.
-\item Released it to Facebook engineers as a generic, easy to use, config-driven, and fully-managed service.
-\item Deployed it to production and enabled realtime updates for use cases such as top clicked search results.
+\item Released internally as a generic, easy to use, and fully-managed service.
+\item Deployed in production to provide realtime updates for use cases such as top clicked search results.
 \end{tightemize}
 \sectionsep
 
@@ -136,7 +141,7 @@ Git \textbullet{} Mercurial
 \descript{ | Software Engineering Intern }
 \location{June 2017 – September 2017 | Infra/Data Platform | Mountain View, CA}
 \begin{tightemize}
-\item Developed a system for monitoring realtime and historic infrastructure metrics using Scala, Apache Spark, and Kafka to improve reliability and scalability compared to existing systems.
+\item Developed a system with improve reliability and scalability for monitoring realtime and historic infrastructure metrics using Scala, Spark, and Kafka.
 \item Improved disaster mitigation utilities with MySQL query blacklisting using Python and ZooKeeper.
 \end{tightemize}
 \sectionsep
@@ -154,8 +159,8 @@ Git \textbullet{} Mercurial
 \descript{ | Software Developer Intern }
 \location{June 2014 – May 2016 | Mountain View, CA}
 \begin{tightemize}
-\item Developed a prototype for a realtime graph-based Lambda Architecture metrics system using Java, Hadoop MapReduce for batch computation, and AWS Lambda + Kinesis for stream processing/realtime updates.
-\item Implemented an automated billing system using PHP and PostgreSQL responsible for processing a majority of eFolder's revenue.
+\item Developed a prototype for a realtime graph-based Lambda Architecture metrics system using Java, Hadoop MapReduce, AWS Lambda, and Kinesis.
+\item Implemented an automated billing system using PHP and PostgreSQL for processing a majority of revenue.
 \end{tightemize}
 \sectionsep
 
@@ -165,31 +170,21 @@ Git \textbullet{} Mercurial
 
 \section{Projects}
 
+\runsubsection{uthread}
+\descript{ | C++ fiber/user-space threading library }
+\begin{tightemize}
+\item Uses cooperative scheduling with fast context switching (30M+ thread context switches/second on a single x86-64 core)
+\item Provides primitives for synchronizing between fibers via mutexes, condition variables, etc.
+\item Provides a non-blocking IO API for timers, sockets, etc. via libevent
+\end{tightemize}
+\sectionsep
+
 \runsubsection{PathTracer}
 \descript{ | C++ Rendering Engine }
 \begin{tightemize}
 \item A physically accurate rendering engine with support for Monte Carlo global illumination, fresnel reflections/refractions, and texture mapping that probabilistically approximates the
 \href{https://en.wikipedia.org/wiki/Rendering_equation}{rendering equation}.
 \item Uses \href{https://en.wikipedia.org/wiki/Bounding_volume_hierarchy}{Bounding Volume Hierarchies} for improved ray-intersection performance and a worker-thread architecture for parallelizing chunk rendering.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{uthread}
-\descript{ | C++ fiber/user-space threading library }
-\begin{tightemize}
-\item Uses cooperative scheduling with fast context switching (30M+ thread context switches/second on a single x86-64 core)
-\item Provides user-space synchronization via mutexes, condition variables, etc.
-\item Provides a non-blocking IO API for timers, sockets, etc. via libevent
-\end{tightemize}
-\sectionsep
-
-\runsubsection{usrnet}
-\descript{ | Rust user-space network stack }
-\begin{tightemize}
-\item Provides a rich callback-based API of raw ethernet, IP, UDP, and TCP sockets similar to that of libevent.
-\item Includes arping, ping, traceroute, netcat, and echo server examples.
-\item Exchanges raw ethernet frames via a Linux TAP using the OS kernel as a router.
-\item TCP sockets are in progress, currently support connection establishment.
 \end{tightemize}
 \sectionsep
 
